@@ -1,9 +1,7 @@
 package com.example.webtest.service.impl;
 
-import com.example.webtest.dao.UserMapper;
 import com.example.webtest.entity.User;
 import com.example.webtest.service.IUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
