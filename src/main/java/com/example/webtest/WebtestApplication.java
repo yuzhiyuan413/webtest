@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-// @MapperScan(basePackages = {"com.example.webtest.dao"})
+@MapperScan("com.example.webtest.mapper")
 public class WebtestApplication {
 
     public static void main(String[] args) {
