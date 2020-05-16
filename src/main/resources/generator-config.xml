@@ -33,7 +33,7 @@
         </javaModelGenerator>
 
         <!--要生成的 mapper 映射文件位置-->
-        <sqlMapGenerator targetPackage="resources.mapper" targetProject="src/main">
+        <sqlMapGenerator targetPackage="resources.mappers" targetProject="src/main">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
@@ -41,10 +41,15 @@
         <javaClientGenerator  targetPackage="com.example.webtest.mapper"
                              targetProject="src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
-            <property name="rootInterface" value="com.example.webtest.dao.BaseRepository"/>
+<!--            <property name="rootInterface" value="com.example.webtest.dao.BaseRepository"/>-->
         </javaClientGenerator>
 
         <table tableName="permission" enableSelectByExample="false" enableDeleteByExample="false"
+               enableCountByExample="false" enableUpdateByExample="false">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+
+        <table tableName="permission_group" enableSelectByExample="false" enableDeleteByExample="false"
                enableCountByExample="false" enableUpdateByExample="false">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>

@@ -7,11 +7,11 @@ spring:
         username: root
         password:
         driver-class-name: com.mysql.cj.jdbc.Driver
-
+#
 #mybatis-plus:
-#    mapper-locations: classpath:mappers/**/*.xml
+#    mapper-locations: classpath:mappers/*.xml
 mybatis:
     type-aliases-package: com.example.webtest.model
-    mapper-locations: classpath:mappers/*.xml
+    mapper-locations: classpath:/mappers/*.xml
     configuration:
         mapUnderscoreToCamelCase: true
